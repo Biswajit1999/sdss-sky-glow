@@ -1,6 +1,6 @@
 # Local Completion Report — SDSS Night-Sky Residual Quality Audit
 
-Author: Biswajit Jana. This report documents a local Claude Code implementation pass
+Author: Biswajit Jana. This report documents a local implementation pass
 (portfolio project, `BUILD_FIRST` priority 9.2/10). No git operations were performed.
 Nothing has been published.
 

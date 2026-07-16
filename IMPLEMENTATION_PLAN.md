@@ -1,6 +1,6 @@
 # Implementation Plan — SDSS Night-Sky Residual Quality Audit
 
-Author: Biswajit Jana. Local Claude Code implementation pass (portfolio project,
+Author: Biswajit Jana. Local implementation pass (portfolio project,
 `BUILD_FIRST`, priority 9.2/10). Reference implementations: the completed sibling
 projects `hst-acs-two-axis-cte-audit`, `euclid-q1-vis-psf-astrometry-audit`,
 `hst-wfc3ir-ramp-linearity-audit` (all at `C:\Users\biswa\Documents\GitHub\`).

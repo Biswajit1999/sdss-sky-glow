@@ -6,7 +6,7 @@ own pixels never influence the continuum used to compute its residuals. The
 wavelength axis is normalised to O(1) before fitting (`x_center`/`x_scale`)
 to avoid the structural ill-conditioning that comes from fitting a polynomial
 directly in raw Angstrom units (~5000-9000), matching the project-wide
-convention documented in CLAUDE_TASK.md / IMPLEMENTATION_PLAN.md.
+convention documented in docs/VALIDATION_CONTRACT.md / IMPLEMENTATION_PLAN.md.
 """
 from __future__ import annotations
 
