@@ -1,0 +1,74 @@
+% All entries verified live via WebFetch/CrossRef before use (see
+% IMPLEMENTATION_PLAN.md sec.2). None required a TODO_VERIFY marker.
+
+@article{Ahn2012BOSS,
+  author  = {Ahn, Christopher P. and others},
+  title   = {The Ninth Data Release of the Sloan Digital Sky Survey: First
+             Spectroscopic Data from the SDSS-III Baryon Oscillation
+             Spectroscopic Survey},
+  journal = {The Astrophysical Journal Supplement Series},
+  volume  = {203},
+  pages   = {21},
+  year    = {2012},
+  eprint  = {1207.7137},
+  archivePrefix = {arXiv}
+}
+
+@article{Guy2023DESIPipeline,
+  author  = {Guy, J. and others},
+  title   = {The Spectroscopic Data Processing Pipeline for the Dark Energy
+             Spectroscopic Instrument},
+  journal = {The Astronomical Journal},
+  year    = {2023},
+  eprint  = {2209.14482},
+  archivePrefix = {arXiv}
+}
+
+@article{Noll2014Skycorr,
+  author  = {Noll, S. and Kausch, W. and Kimeswenger, S. and Barden, M. and
+             Jones, A. M. and Modigliani, A. and Szyszka, C. and Taylor, J.},
+  title   = {Skycorr: A general tool for spectroscopic sky subtraction},
+  journal = {Astronomy \& Astrophysics},
+  volume  = {567},
+  pages   = {A25},
+  year    = {2014},
+  doi     = {10.1051/0004-6361/201423908}
+}
+
+@article{Hanuschik2003SkyAtlas,
+  author  = {Hanuschik, R. W.},
+  title   = {A flux-calibrated, high-resolution atlas of optical sky
+             emission from UVES},
+  journal = {Astronomy \& Astrophysics},
+  volume  = {407},
+  pages   = {1157--1164},
+  year    = {2003},
+  doi     = {10.1051/0004-6361:20030885}
+}
+
+@misc{SDSSDr17SpectroBasics,
+  author = {{SDSS Collaboration}},
+  title  = {{SDSS DR17: Spectro Basics}},
+  year   = {2021},
+  howpublished = {\url{https://www.sdss4.org/dr17/spectro/spectro_basics/}},
+  note   = {Verified live; wavelength coverage and vacuum-wavelength
+            convention confirmed.}
+}
+
+@misc{SDSSDr17Bitmasks,
+  author = {{SDSS Collaboration}},
+  title  = {{SDSS DR17: Bitmasks (SPPIXMASK)}},
+  year   = {2021},
+  howpublished = {\url{https://www.sdss4.org/dr17/algorithms/bitmasks/\#SPPIXMASK}},
+  note   = {Verified live; states pipeline error estimates ``can be
+            untrustworthy near certain emission lines like 5577 Angstroms''.}
+}
+
+@misc{SDSSSpecDatamodel,
+  author = {{SDSS Collaboration}},
+  title  = {{spec FITS datamodel (BOSS\_SPECTRO\_REDUX)}},
+  year   = {2021},
+  howpublished = {\url{https://data.sdss.org/datamodel/files/BOSS_SPECTRO_REDUX/RUN2D/spectra/full/PLATE4/spec.html}},
+  note   = {Verified live; HDU1 COADD columns flux, loglam, ivar, and\_mask,
+            or\_mask, wdisp, sky, model.}
+}

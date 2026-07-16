@@ -1,0 +1,44 @@
+{
+  "title": "SDSS Night-Sky Residual Quality Audit",
+  "repo": "sdss-sky-glow",
+  "category": "Spectroscopic instrumentation / data science",
+  "status": "BUILD_FIRST",
+  "priority": 9.2,
+  "question": "Do known night-sky wavelength regions show elevated uncertainty-normalised residual structure relative to matched local control windows?",
+  "gap": "A released-product QA audit of SDSS DR17 spectra; not a new sky-subtraction pipeline or raw reduction.",
+  "dataMode": "real public SDSS DR17 spectra",
+  "novelty": "A released-product QA audit; not a new SDSS sky-subtraction pipeline or a replacement for the idlspec2d reduction.",
+  "figures": [
+    { "id": "fig01_representative_spectra", "label": "Representative spectra" },
+    { "id": "fig02_local_residual_example", "label": "Local residual example" },
+    { "id": "fig03_scale_by_region", "label": "Scale by region" },
+    { "id": "fig04_class_comparison", "label": "Class comparison" },
+    { "id": "fig05_snr_dependence", "label": "SNR dependence" },
+    { "id": "fig06_null_test", "label": "Null test (shifted-window control)" }
+  ],
+  "validationContract": [
+    "synthetic residual injection (known-amplitude excess-noise bump)",
+    "spectrum-level bootstrap (1000 resamples, seed 20260713)",
+    "mask sensitivity (rerun excluding SPPIXMASK sky-quality bits)",
+    "shifted-window null test (no true sky line, expect ratio near 1)",
+    "class/SNR stratification (GALAXY/STAR/QSO, snMedian bins)"
+  ],
+  "methodology": "For each spectrum, a low-order ivar-weighted polynomial continuum is fit to a baseline region surrounding (but excluding) each documented night-sky window ([OI] 5577A, NaD 5890A, [OI] 6300/6364A, OH airglow forest onset ~7600A) and its matched local control window of identical width. Per-pixel uncertainty-normalised residuals r=(flux-continuum)*sqrt(ivar) are aggregated per window into a robust (MAD-based) scale statistic. The sky-vs-control excess statistic is the ratio and difference of these scales; a ratio > 1 indicates elevated residual structure inside the sky window relative to its control. Results are aggregated across spectra (median), bootstrapped for uncertainty, and stratified by SDSS object class and S/N.",
+  "assumptions": [
+    "SDSS/BOSS spec-*.fits COADD wavelengths are vacuum Angstroms (wavelength = 10**loglam), verified against the official SDSS DR17 spectro_basics documentation.",
+    "SPPIXMASK bit definitions (NOPLUG, BADTRACE, ..., NOSKY, BRIGHTSKY, BADSKYCHI, REDMONSTER) were verified live against the SDSS DR17 bitmask documentation, not recalled from memory.",
+    "Sky-quality SPPIXMASK bits are deliberately not excluded by the default good-pixel mask, since they are themselves partly the phenomenon under study; a mask-sensitivity check reruns with them excluded.",
+    "Night-sky line centre wavelengths (5577.3A, 5890/5896A, 6300.3/6363.8A, OH forest onset ~7200A) are the commonly quoted round values documented in docs/ASSUMPTIONS_AND_LIMITATIONS.md, not atlas-precision measurements from Hanuschik (2003)."
+  ],
+  "limitations": [
+    "A bounded, released-product QA audit; not a new sky-subtraction pipeline, not a substitute for idlspec2d/DESI Guy et al. (2023) pipeline internals.",
+    "Continuum is a low-order local polynomial, not a physically motivated stellar/galaxy/QSO template fit; genuine astrophysical features near a sky window could bias the local continuum estimate for that spectrum.",
+    "Sample sizes for the real-data run are necessarily small (bounded by an explicit, deterministic query), so per-class/per-SNR stratified results carry wide uncertainty.",
+    "reports/report.tex could not be compiled to PDF in this environment (no local LaTeX toolchain); only structural completeness was verified."
+  ],
+  "citation": {
+    "author": "Biswajit Jana",
+    "license": "BSD-3-Clause (original code); SDSS DR17 data retain SDSS's own public data-use terms",
+    "repository": "https://github.com/Biswajit1999/sdss-sky-glow"
+  }
+}

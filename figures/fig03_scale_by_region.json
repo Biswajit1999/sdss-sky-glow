@@ -1,0 +1,9 @@
+{
+  "figure": "fig03_scale_by_region",
+  "data_kind": "real public SDSS spectra",
+  "sample_size": 15,
+  "units": "dimensionless ratio",
+  "git_commit": "LOCAL_UNCOMMITTED",
+  "config_sha256": "6718a377bddcb863f87ea45676aecf8226ff795720e7db704f5c2415b05d67bb",
+  "package_version": "0.1.0"
+}

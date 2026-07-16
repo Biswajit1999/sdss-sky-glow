@@ -1,0 +1,9 @@
+{
+  "figure": "fig01_representative_spectra",
+  "data_kind": "real public SDSS spectra",
+  "sample_size": 3,
+  "units": "Angstrom vs 1e-17 erg/s/cm^2/A",
+  "git_commit": "LOCAL_UNCOMMITTED",
+  "config_sha256": "6718a377bddcb863f87ea45676aecf8226ff795720e7db704f5c2415b05d67bb",
+  "package_version": "0.1.0"
+}
