@@ -1,8 +1,12 @@
 from __future__ import annotations
 
 from pathlib import Path
+
 import matplotlib.pyplot as plt
 import numpy as np
+import scienceplots  # noqa: F401
+
+plt.style.use(["science", "no-latex"])
 
 
 def plot_demo(values: np.ndarray, output: str | Path) -> Path:

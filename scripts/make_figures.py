@@ -18,6 +18,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
+import scienceplots  # noqa: F401
 
 from sdss_sky_residual_quality_audit import __version__
 from sdss_sky_residual_quality_audit.config import load_config
@@ -30,6 +31,8 @@ from sdss_sky_residual_quality_audit.plotting import plot_demo
 from sdss_sky_residual_quality_audit.provenance import get_git_commit, read_manifest, sha256_config
 from sdss_sky_residual_quality_audit.synthetic import make_synthetic_sample
 from sdss_sky_residual_quality_audit.windows import SKY_WINDOW_PAIRS
+
+plt.style.use(["science", "no-latex"])
 
 
 def _sidecar(path: Path, *, data_kind: str, sample_size: int, units: str, config_path: Path, extra: dict | None = None) -> None:

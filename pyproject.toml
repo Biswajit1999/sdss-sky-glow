@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "sdss-sky-glow"
 version = "0.1.0"
 description = "Publication-grade computational science starter repository."
+authors = [{ name = "Biswajit Jana", email = "biswajitj998@gmail.com" }]
 requires-python = ">=3.11,<3.13"
 dependencies = [
   "numpy==1.26.4",
@@ -16,7 +17,8 @@ dependencies = [
   "astropy==6.1.0",
   "astroquery==0.4.7",
   "specutils==1.20.3",
-  "requests==2.32.3"
+  "requests==2.32.3",
+  "SciencePlots==2.2.2"
 ]
 
 [project.optional-dependencies]
@@ -44,4 +46,8 @@ python_version = "3.11"
 
 [[tool.mypy.overrides]]
 module = ["astropy.*", "astroquery.*", "scipy.*", "specutils.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["scienceplots.*"]
 ignore_missing_imports = true
