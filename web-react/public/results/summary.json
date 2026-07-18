@@ -1,0 +1,102 @@
+{
+  "project": "SDSS Night-Sky Residual Quality Audit",
+  "data_kind": "real public SDSS spectra",
+  "metrics": [
+    {
+      "name": "median_ratio_OI_5577",
+      "estimate": 1.7109120614498026,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless (sky_robust_std / control_robust_std)",
+      "sample_size": 15
+    },
+    {
+      "name": "bootstrap_ratio_OI_5577",
+      "estimate": 1.7109120614498026,
+      "uncertainty_low": 1.3248735718022446,
+      "uncertainty_high": 1.8285822942603676,
+      "units": "dimensionless",
+      "sample_size": 15
+    },
+    {
+      "name": "median_ratio_NaD_5890",
+      "estimate": 1.0594305061448552,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless (sky_robust_std / control_robust_std)",
+      "sample_size": 15
+    },
+    {
+      "name": "bootstrap_ratio_NaD_5890",
+      "estimate": 1.0594305061448552,
+      "uncertainty_low": 1.0048861209689948,
+      "uncertainty_high": 1.2158904304921256,
+      "units": "dimensionless",
+      "sample_size": 15
+    },
+    {
+      "name": "median_ratio_OI_6300",
+      "estimate": 1.9488884795628811,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless (sky_robust_std / control_robust_std)",
+      "sample_size": 13
+    },
+    {
+      "name": "bootstrap_ratio_OI_6300",
+      "estimate": 1.9488884795628811,
+      "uncertainty_low": 1.7329565425626656,
+      "uncertainty_high": 2.4736829092921,
+      "units": "dimensionless",
+      "sample_size": 13
+    },
+    {
+      "name": "median_ratio_OI_6364",
+      "estimate": 0.9836034423522179,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless (sky_robust_std / control_robust_std)",
+      "sample_size": 13
+    },
+    {
+      "name": "bootstrap_ratio_OI_6364",
+      "estimate": 0.9836034423522179,
+      "uncertainty_low": 0.9049534194453406,
+      "uncertainty_high": 1.1144270926621411,
+      "units": "dimensionless",
+      "sample_size": 13
+    },
+    {
+      "name": "median_ratio_OH_forest_7600",
+      "estimate": 1.0699693959866639,
+      "uncertainty_low": null,
+      "uncertainty_high": null,
+      "units": "dimensionless (sky_robust_std / control_robust_std)",
+      "sample_size": 12
+    },
+    {
+      "name": "bootstrap_ratio_OH_forest_7600",
+      "estimate": 1.0699693959866639,
+      "uncertainty_low": 0.9794529591477364,
+      "uncertainty_high": 1.2072911374755484,
+      "units": "dimensionless",
+      "sample_size": 12
+    }
+  ],
+  "provenance": {
+    "config_sha256": "6718a377bddcb863f87ea45676aecf8226ff795720e7db704f5c2415b05d67bb",
+    "git_commit": "LOCAL_UNCOMMITTED",
+    "package_version": "0.1.0",
+    "n_spectra_in": 15,
+    "n_spectra_used": 15
+  },
+  "warnings": [
+    "spec-0266-51630-0011/OH_forest_7600: window 'OH_forest_7600_sky': only 0 finite residual pixels, need >= 3",
+    "spec-0266-51630-0012/OI_6300: window 'OI_6300_sky': only 0 good baseline pixels available, need >= 4 for a degree-1 continuum fit",
+    "spec-0266-51630-0012/OI_6364: window 'OI_6364_sky': only 0 good baseline pixels available, need >= 4 for a degree-1 continuum fit",
+    "spec-0266-51630-0012/OH_forest_7600: window 'OH_forest_7600_sky': only 0 good baseline pixels available, need >= 4 for a degree-1 continuum fit",
+    "spec-0266-51630-0013/OI_6300: window 'OI_6300_sky': only 0 good baseline pixels available, need >= 4 for a degree-1 continuum fit",
+    "spec-0266-51630-0013/OI_6364: window 'OI_6364_sky': only 0 good baseline pixels available, need >= 4 for a degree-1 continuum fit",
+    "spec-0266-51630-0013/OH_forest_7600: window 'OH_forest_7600_sky': only 0 good baseline pixels available, need >= 4 for a degree-1 continuum fit"
+  ]
+}

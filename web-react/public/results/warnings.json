@@ -1,0 +1,9 @@
+[
+  "spec-0266-51630-0011/OH_forest_7600: window 'OH_forest_7600_sky': only 0 finite residual pixels, need >= 3",
+  "spec-0266-51630-0012/OI_6300: window 'OI_6300_sky': only 0 good baseline pixels available, need >= 4 for a degree-1 continuum fit",
+  "spec-0266-51630-0012/OI_6364: window 'OI_6364_sky': only 0 good baseline pixels available, need >= 4 for a degree-1 continuum fit",
+  "spec-0266-51630-0012/OH_forest_7600: window 'OH_forest_7600_sky': only 0 good baseline pixels available, need >= 4 for a degree-1 continuum fit",
+  "spec-0266-51630-0013/OI_6300: window 'OI_6300_sky': only 0 good baseline pixels available, need >= 4 for a degree-1 continuum fit",
+  "spec-0266-51630-0013/OI_6364: window 'OI_6364_sky': only 0 good baseline pixels available, need >= 4 for a degree-1 continuum fit",
+  "spec-0266-51630-0013/OH_forest_7600: window 'OH_forest_7600_sky': only 0 good baseline pixels available, need >= 4 for a degree-1 continuum fit"
+]
