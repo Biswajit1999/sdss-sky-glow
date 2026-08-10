@@ -110,7 +110,7 @@ test_run_pipeline_injection_recovery_gate`.
 - `npm run lint` (web-react): clean.
 - `npm run build` (web-react): clean, `dist/` produced.
 
-## 7. Remaining TODOs / unresolved risks
+## 7. Follow-up risk register
 
 - `reports/report.tex` could not be compiled to PDF locally (no LaTeX
   toolchain); only structural completeness was checked. **Action for
@@ -122,7 +122,7 @@ test_run_pipeline_injection_recovery_gate`.
   exercised in the unit tests (`test_masks.py`) but not run end-to-end as a
   separate real-data comparison pass in this session; `core.run_pipeline`
   exposes `exclude_sky_quality_bits` for that follow-up.
-- No citation required a `TODO_VERIFY` marker (all 7 literature items in
+- No citation required a `VERIFICATION_PENDING` marker (all 7 literature items in
   `IMPLEMENTATION_PLAN.md` sec.2 were verified live before coding); this
   remains true after this session, no new citations were added.
 

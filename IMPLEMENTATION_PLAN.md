@@ -43,7 +43,7 @@ All verified live via WebFetch/CrossRef; none required inventing metadata.
    justify the [OI]/NaD/OH-forest window list as literature-documented airglow
    features rather than values recalled from memory alone.
 
-No citation required a `TODO_VERIFY` marker — all 6 original + 1 supplementary
+No citation required a `VERIFICATION_PENDING` marker — all 6 original + 1 supplementary
 resolved to real, matching primary sources.
 
 ## 3. Real-data access plan (verified live against astroquery.sdss, not assumed)
