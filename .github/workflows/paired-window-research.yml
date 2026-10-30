@@ -1,0 +1,29 @@
+name: Paired SDSS window diagnostics
+on:
+  push:
+    paths:
+      - 'src/sdss_sky_residual_quality_audit/paired_window_diagnostics.py'
+      - 'tests/test_paired_window_diagnostics.py'
+      - 'scripts/plot_paired_window_diagnostics.py'
+      - '.github/workflows/paired-window-research.yml'
+  pull_request:
+  workflow_dispatch:
+jobs:
+  diagnostics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -e '.[dev]'
+      - run: python -m pytest -q tests/test_paired_window_diagnostics.py
+      - run: ruff check src tests scripts
+      - run: python -m sdss_sky_residual_quality_audit.paired_window_diagnostics --output results/paired_window_synthetic.json
+      - run: python scripts/plot_paired_window_diagnostics.py --output results/paired_window_synthetic.png
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sdss-paired-window-diagnostics
+          path: |
+            results/paired_window_synthetic.json
+            results/paired_window_synthetic.png
