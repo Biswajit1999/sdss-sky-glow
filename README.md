@@ -4,6 +4,12 @@
 
 > **Curation:** `BUILD_FIRST` · Priority 9.2/10 · real public SDSS spectra
 
+## Research evidence and downloads
+
+[Open the evidence browser file](evidence.html) for 14 selected files, including [`fig01_representative_spectra.json`](figures/fig01_representative_spectra.json). Each file has a download link and SHA-256 digest. Serve this checkout with `python -m http.server` to view the static browser.
+
+Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
+
 ## Scientific question
 
 Do known night-sky wavelength regions show elevated uncertainty-normalised residual structure relative to matched local control windows?
