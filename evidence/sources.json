@@ -1,0 +1,76 @@
+{
+  "project": "SDSS Night-Sky Residual Quality Audit",
+  "repository": "https://github.com/Biswajit1999/sdss-sky-glow",
+  "files": [
+    {
+      "label": "Provenance",
+      "path": "data/provenance.yml",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Manifest",
+      "path": "data/manifest.csv",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Research reference",
+      "path": "data/research-reference.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Demo",
+      "path": "data/example/demo.csv",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Fig01 representative spectra",
+      "path": "figures/fig01_representative_spectra.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig02 local residual example",
+      "path": "figures/fig02_local_residual_example.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig03 scale by region",
+      "path": "figures/fig03_scale_by_region.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig04 class comparison",
+      "path": "figures/fig04_class_comparison.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig05 snr dependence",
+      "path": "figures/fig05_snr_dependence.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig06 null test",
+      "path": "figures/fig06_null_test.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Fig00 smoke test",
+      "path": "figures/fig00_smoke_test.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Fig01 representative spectra",
+      "path": "figures/fig01_representative_spectra.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Fig02 local residual example",
+      "path": "figures/fig02_local_residual_example.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Fig03 scale by region",
+      "path": "figures/fig03_scale_by_region.png",
+      "role": "Figures"
+    }
+  ]
+}

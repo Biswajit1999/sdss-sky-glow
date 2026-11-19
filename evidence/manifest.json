@@ -1,0 +1,283 @@
+{
+  "schema": 1,
+  "project": "SDSS Night-Sky Residual Quality Audit",
+  "repository": "https://github.com/Biswajit1999/sdss-sky-glow",
+  "files": [
+    {
+      "label": "Provenance",
+      "path": "data/provenance.yml",
+      "role": "Data and provenance",
+      "bytes": 564,
+      "sha256": "e61df1cc3250b2e3f9aa975b37a0043f04f833e9cc43308c68574ebd62d7c0f1",
+      "hash_basis": "LF-normalised text",
+      "format": "YML"
+    },
+    {
+      "label": "Manifest",
+      "path": "data/manifest.csv",
+      "role": "Data and provenance",
+      "bytes": 7195,
+      "sha256": "9d28be64102668a2602efbc28a31af58be598223b38c57d291170d0eb03b9d0f",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 15,
+      "columns": 8,
+      "headers": [
+        "product_id",
+        "source",
+        "source_url",
+        "retrieved_utc",
+        "sha256",
+        "file_size_bytes",
+        "selection_reason"
+      ],
+      "preview": [
+        [
+          "spec-0266-51630-0001",
+          "SDSS/DR17",
+          "https://skyserver.sdss.org/dr17/",
+          "2026-07-15T05:47:54.322922+00:00",
+          "bad82063910273d45b8321843bd1c6f22326bd448b560b6b4c6ced41c6d9df8c",
+          "748800",
+          "deterministic sample of 12 SpecObj rows (zWarning=0, snMedian>2, class in GALAXY/STAR/QSO), ORDER BY specobjid, for sky-residua..."
+        ],
+        [
+          "spec-0266-51630-0002",
+          "SDSS/DR17",
+          "https://skyserver.sdss.org/dr17/",
+          "2026-07-15T05:47:54.322922+00:00",
+          "e285d0088fe6a455b145903e8dc3c80fe09e29a408ac7e9a8ea5e948e661ba90",
+          "748800",
+          "deterministic sample of 12 SpecObj rows (zWarning=0, snMedian>2, class in GALAXY/STAR/QSO), ORDER BY specobjid, for sky-residua..."
+        ],
+        [
+          "spec-0266-51630-0003",
+          "SDSS/DR17",
+          "https://skyserver.sdss.org/dr17/",
+          "2026-07-15T05:47:54.322922+00:00",
+          "4fd94464d1fafac80be1292a84d975aae3150e421b336018447085513706078c",
+          "748800",
+          "deterministic sample of 12 SpecObj rows (zWarning=0, snMedian>2, class in GALAXY/STAR/QSO), ORDER BY specobjid, for sky-residua..."
+        ],
+        [
+          "spec-0266-51630-0004",
+          "SDSS/DR17",
+          "https://skyserver.sdss.org/dr17/",
+          "2026-07-15T05:47:54.322922+00:00",
+          "9623fabe85a313209dbf1798accf500d77ad3e979cec23b6ec8e9b900fe0363f",
+          "748800",
+          "deterministic sample of 12 SpecObj rows (zWarning=0, snMedian>2, class in GALAXY/STAR/QSO), ORDER BY specobjid, for sky-residua..."
+        ]
+      ]
+    },
+    {
+      "label": "Research reference",
+      "path": "data/research-reference.json",
+      "role": "Data and provenance",
+      "bytes": 696,
+      "sha256": "aa5e8d7f4796777eff85c6d71c9102ad23bceb9ff53a05cb96f24cf0309d0494",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "title",
+        "description",
+        "equations",
+        "references",
+        "anchors"
+      ],
+      "arrays": {
+        "equations": 3,
+        "references": 1,
+        "anchors": 3
+      }
+    },
+    {
+      "label": "Demo",
+      "path": "data/example/demo.csv",
+      "role": "Data and provenance",
+      "bytes": 80,
+      "sha256": "2231cd2f44a7854fefcb8da60f527333a903c9c7a75fbd9154fdde13de699305",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 5,
+      "columns": 3,
+      "headers": [
+        "x",
+        "value",
+        "uncertainty"
+      ],
+      "preview": [
+        [
+          "0",
+          "0.10",
+          "0.02"
+        ],
+        [
+          "1",
+          "0.18",
+          "0.03"
+        ],
+        [
+          "2",
+          "0.14",
+          "0.02"
+        ],
+        [
+          "3",
+          "0.24",
+          "0.04"
+        ]
+      ]
+    },
+    {
+      "label": "Fig01 representative spectra",
+      "path": "figures/fig01_representative_spectra.json",
+      "role": "Tables and numerical results",
+      "bytes": 308,
+      "sha256": "c5d889a151303a3ecd84d8ba9b1f716509550f2410ca8a86be5b67c23437a15d",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig02 local residual example",
+      "path": "figures/fig02_local_residual_example.json",
+      "role": "Tables and numerical results",
+      "bytes": 314,
+      "sha256": "600ecba7f9fcbf138013d08022c7be2982f94f56e703e18021daec8e397be1db",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig03 scale by region",
+      "path": "figures/fig03_scale_by_region.json",
+      "role": "Tables and numerical results",
+      "bytes": 291,
+      "sha256": "33d944b621bb78d240aa279110a6b978db22395a5c3dfb49a11d420d2de46ba5",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig04 class comparison",
+      "path": "figures/fig04_class_comparison.json",
+      "role": "Tables and numerical results",
+      "bytes": 292,
+      "sha256": "624e9a4cf9451e7f02eb1c8a9014f47223167caf4e25b4e8eedcef55842b25ef",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig05 snr dependence",
+      "path": "figures/fig05_snr_dependence.json",
+      "role": "Tables and numerical results",
+      "bytes": 289,
+      "sha256": "3b7f48703a138db439f3e1e1f9ed8b3dd9408f191d2ada1a17ed1bf5afa02853",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig06 null test",
+      "path": "figures/fig06_null_test.json",
+      "role": "Tables and numerical results",
+      "bytes": 285,
+      "sha256": "e964fa9422f356e960562d3e3c6eb790b09a24be3e21b47b3d4044ae6d1558ad",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "figure",
+        "data_kind",
+        "sample_size",
+        "units",
+        "git_commit",
+        "config_sha256",
+        "package_version"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Fig00 smoke test",
+      "path": "figures/fig00_smoke_test.png",
+      "role": "Figures",
+      "bytes": 145931,
+      "sha256": "6e104c3cdba1becfbf60a54e0703f2bdf3517d73746068d6e54045eff7680253",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Fig01 representative spectra",
+      "path": "figures/fig01_representative_spectra.png",
+      "role": "Figures",
+      "bytes": 253933,
+      "sha256": "8cc6ca0c737611e9ab203d91f685a5060a5112952bf901eee34ee0ed2a49ef07",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Fig02 local residual example",
+      "path": "figures/fig02_local_residual_example.png",
+      "role": "Figures",
+      "bytes": 177195,
+      "sha256": "d07e05ff4ece9c499d68cbbea952aa1ff0c45c3c400170590430ebc653e9c9bb",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Fig03 scale by region",
+      "path": "figures/fig03_scale_by_region.png",
+      "role": "Figures",
+      "bytes": 119789,
+      "sha256": "d211dbb6111de11d50d57bbaf46fa489585ced422a6f50c0ed9aa3701c0cd4de",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    }
+  ]
+}
